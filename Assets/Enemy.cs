@@ -7,19 +7,29 @@ public class Enemy : MonoBehaviour
     public float health = 100;
     public Animator animator;
 
+    private bool isDead = false;
+
+    //Getting Hit Function
     public void Hit(float damage)
     {
-        this.health -= damage;
-
-        if(health < 0 )
+        if(health <= 0)
         {
-            Dead();
+            if(!isDead)
+            {
+                Dead();
+            }
+        }
+        else
+        {
+            health -= damage;
+            animator.SetTrigger("Hit");
         }
     }
 
+    //Dead Fuctionn
     private void Dead()
     {
-
-            animator.SetTrigger("")
+        animator.SetTrigger("Die");
+        isDead = true;
     }
 }

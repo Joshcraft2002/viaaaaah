@@ -56,7 +56,63 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0
+        functionName: Attack
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: d20cf82f31ad8f14db7532e345c28182, type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.1540471
+        functionName: Attack
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: d20cf82f31ad8f14db7532e345c28182, type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.2762225
+        functionName: Attack
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: d20cf82f31ad8f14db7532e345c28182, type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.44443497
+        functionName: Attack
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: d20cf82f31ad8f14db7532e345c28182, type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.5577571
+        functionName: Attack
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: d20cf82f31ad8f14db7532e345c28182, type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.6763911
+        functionName: Attack
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: d20cf82f31ad8f14db7532e345c28182, type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.76492405
+        functionName: Attack
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: d20cf82f31ad8f14db7532e345c28182, type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.9207419
+        functionName: Attack
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: d20cf82f31ad8f14db7532e345c28182, type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
