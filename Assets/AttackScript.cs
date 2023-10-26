@@ -20,8 +20,15 @@ public class AttackScript : MonoBehaviour
     [Space(20)]
     //public float atkSpeed;
     public float minAnimLength = 0f;
-    private Animator anim;
-    
+    [Space]
+    [SerializeField]
+    private float atkProgress = 0;
+    public int keyLimit = 0;
+    private float atkDamage;
+    [Space]
+    public float inputWindow = 1f;
+
+
     public List<AttackType> keyPress = new List<AttackType>();
 
     [Space]
@@ -38,12 +45,7 @@ public class AttackScript : MonoBehaviour
         public AttackType[] sequence;
     }
 
-    [SerializeField]
-    private float atkProgress = 0;
-    public int keyLimit = 0;
-    private float atkDamage;
-
-    public float inputWindow = 1f;
+    private Animator anim;
 
     // Start is called before the first frame update
     void Start()
@@ -77,16 +79,12 @@ public class AttackScript : MonoBehaviour
             if (Input.GetKeyDown(lightAttack))
             {
                 ComboCheck(AttackType.light);
-                /*if (!isInCombo)
-                    anim.SetTrigger("Light");*/
                 atkProgress = 0;
-                //atk = true;
             }
             else if (Input.GetKeyDown(heavyAttack))
             {
                 ComboCheck(AttackType.heavy);
                 atkProgress = 0;
-                //atk = true;
             }
         }    
     }
@@ -140,6 +138,7 @@ public class AttackScript : MonoBehaviour
                     Debug.Log(comboPress[i].comboAnimName);
                     atkDamage = comboPress[i].damageAtk;
                     anim.SetTrigger(comboPress[i].comboAnimName);
+
                     //atkSpeed = comboPress[i].newAtkSpeed;
                     minAnimLength = comboPress[i].minAnimLength;
                     return true;
@@ -152,8 +151,9 @@ public class AttackScript : MonoBehaviour
 
     public void Attack()
     {
-        //Creates the collision collision sphere
+        //Creates a collision sphere
         Collider[] col = Physics.OverlapSphere(transform.position + offset, sphereSize, objectsToHit);
+
         //Finds all colliding object
         foreach (Collider collision in col)
         {

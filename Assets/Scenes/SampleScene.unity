@@ -839,7 +839,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
-  animator: {fileID: 0}
+  animator: {fileID: 1411048995}
 --- !u!136 &413419890
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -851,9 +851,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5
-  m_Height: 1
+  m_Height: 4.2667613
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 1.6333807, z: 0}
 --- !u!4 &413419891
 Transform:
   m_ObjectHideFlags: 0
@@ -11040,6 +11040,9 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0}
   sphereSize: 1
   minAnimLength: 0
+  atkProgress: 0
+  keyLimit: 0
+  inputWindow: 0.1
   keyPress: 6c00000068000000680000006c000000
   comboPress:
   - damageAtk: 10
@@ -11054,9 +11057,6 @@ MonoBehaviour:
     minAnimLength: 0.2
     comboAnimName: SpecialAttack 2
     sequence: 6c00000068000000
-  atkProgress: 0
-  keyLimit: 0
-  inputWindow: 0.1
 --- !u!1 &166941912004786972
 GameObject:
   m_ObjectHideFlags: 0
@@ -13500,6 +13500,9 @@ MonoBehaviour:
   offset: {x: 0, y: 2.29, z: 1.83}
   sphereSize: 0.86
   minAnimLength: 0
+  atkProgress: 0
+  keyLimit: 5
+  inputWindow: 0.1
   keyPress: 00000000000000000100000001000000
   comboPress:
   - damageAtk: 10
@@ -13510,25 +13513,22 @@ MonoBehaviour:
     minAnimLength: 0.2
     comboAnimName: SpecialAttack 1
     sequence: 000000000000000001000000
-  - damageAtk: 30
+  - damageAtk: 5
     minAnimLength: 0.2
     comboAnimName: DoubleL
     sequence: 0000000000000000
-  - damageAtk: 30
+  - damageAtk: 10
     minAnimLength: 0.2
     comboAnimName: SpecialAttack 2
     sequence: 0000000001000000
-  - damageAtk: 30
+  - damageAtk: 5
     minAnimLength: 0.2
     comboAnimName: Light
     sequence: 00000000
-  - damageAtk: 30
+  - damageAtk: 10
     minAnimLength: 0.2
     comboAnimName: Heavy
     sequence: 01000000
-  atkProgress: 0
-  keyLimit: 5
-  inputWindow: 0.1
 --- !u!95 &7539065645171254255
 Animator:
   serializedVersion: 5
